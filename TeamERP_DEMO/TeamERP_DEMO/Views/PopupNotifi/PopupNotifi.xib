@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="rfS-bl-Xff" customClass="PopupNotifi" customModule="TeamERP_DEMO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jzu-ZA-EFX">
+                    <rect key="frame" x="53" y="192" width="270" height="284"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uEO-h0-wjX">
+                            <rect key="frame" x="15" y="236" width="240" height="40"/>
+                            <color key="backgroundColor" red="0.078431372550000003" green="0.80000000000000004" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="4p9-7N-0Rj"/>
+                            </constraints>
+                            <state key="normal" title="Button">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="btActionPopup:" destination="rfS-bl-Xff" eventType="touchUpInside" id="bYu-jD-dZR"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thông báo" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y9m-g6-bKZ">
+                            <rect key="frame" x="15" y="155" width="240" height="71"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="71" id="WvB-ca-2uH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o9Y-eF-GH8">
+                            <rect key="frame" x="0.0" y="0.0" width="270" height="147"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="frame_xacnhan" translatesAutoresizingMaskIntoConstraints="NO" id="zvO-La-VHK">
+                                    <rect key="frame" x="0.0" y="0.0" width="270" height="147"/>
+                                </imageView>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_thongtin" translatesAutoresizingMaskIntoConstraints="NO" id="FRp-Yb-PUO">
+                                    <rect key="frame" x="103" y="77.5" width="64" height="64"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="64" id="TE8-um-lr3"/>
+                                        <constraint firstAttribute="width" constant="64" id="k1R-AO-CU2"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="THÀNH CÔNG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lzU-NJ-rAw">
+                                    <rect key="frame" x="8" y="28" width="254" height="21.5"/>
+                                    <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
+                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="lzU-NJ-rAw" firstAttribute="top" secondItem="o9Y-eF-GH8" secondAttribute="top" constant="28" id="0TG-MA-jCU"/>
+                                <constraint firstAttribute="trailing" secondItem="lzU-NJ-rAw" secondAttribute="trailing" constant="8" id="1Do-6N-SPH"/>
+                                <constraint firstItem="lzU-NJ-rAw" firstAttribute="centerX" secondItem="o9Y-eF-GH8" secondAttribute="centerX" id="AIu-Mp-rLP"/>
+                                <constraint firstItem="zvO-La-VHK" firstAttribute="leading" secondItem="o9Y-eF-GH8" secondAttribute="leading" id="Iv9-cT-GgQ"/>
+                                <constraint firstAttribute="bottom" secondItem="zvO-La-VHK" secondAttribute="bottom" id="NmD-i4-9ea"/>
+                                <constraint firstItem="zvO-La-VHK" firstAttribute="top" secondItem="o9Y-eF-GH8" secondAttribute="top" id="Yk0-3p-5qQ"/>
+                                <constraint firstItem="FRp-Yb-PUO" firstAttribute="centerX" secondItem="o9Y-eF-GH8" secondAttribute="centerX" id="gcU-6Z-pgd"/>
+                                <constraint firstAttribute="trailing" secondItem="zvO-La-VHK" secondAttribute="trailing" id="krz-Hz-FnR"/>
+                                <constraint firstItem="FRp-Yb-PUO" firstAttribute="top" secondItem="lzU-NJ-rAw" secondAttribute="bottom" constant="28" id="otQ-ey-sPE"/>
+                                <constraint firstItem="lzU-NJ-rAw" firstAttribute="leading" secondItem="o9Y-eF-GH8" secondAttribute="leading" constant="8" id="ps7-qR-mDC"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f6W-dL-nPV" userLabel="View two button">
+                            <rect key="frame" x="15" y="236" width="240" height="40"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4z-I7-wFf" userLabel="Button Cancel">
+                                    <rect key="frame" x="0.0" y="0.0" width="115" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.93333333330000001" green="0.37647058820000001" blue="0.37647058820000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Bỏ qua">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QH6-Kc-aHN" userLabel=" Bt Try Again">
+                                    <rect key="frame" x="125" y="0.0" width="115" height="40"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.078431372550000003" green="0.80000000000000004" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <state key="normal" title="Thử lại">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="o9Y-eF-GH8" firstAttribute="leading" secondItem="Jzu-ZA-EFX" secondAttribute="leading" id="1kL-DH-nyn"/>
+                        <constraint firstAttribute="bottom" secondItem="uEO-h0-wjX" secondAttribute="bottom" constant="8" id="7XU-Cf-HKr"/>
+                        <constraint firstItem="uEO-h0-wjX" firstAttribute="top" secondItem="y9m-g6-bKZ" secondAttribute="bottom" constant="10" id="Clo-ag-AEy"/>
+                        <constraint firstAttribute="width" constant="270" id="F7M-tS-iB6"/>
+                        <constraint firstItem="y9m-g6-bKZ" firstAttribute="top" secondItem="o9Y-eF-GH8" secondAttribute="bottom" constant="8" id="FEy-BU-GV5"/>
+                        <constraint firstItem="uEO-h0-wjX" firstAttribute="leading" secondItem="y9m-g6-bKZ" secondAttribute="leading" id="HU7-lc-Gyq"/>
+                        <constraint firstItem="f6W-dL-nPV" firstAttribute="leading" secondItem="Jzu-ZA-EFX" secondAttribute="leading" constant="15" id="L80-1G-ibu"/>
+                        <constraint firstItem="uEO-h0-wjX" firstAttribute="trailing" secondItem="y9m-g6-bKZ" secondAttribute="trailing" id="PiB-fb-xe2"/>
+                        <constraint firstAttribute="bottom" secondItem="f6W-dL-nPV" secondAttribute="bottom" constant="8" id="T0g-d7-2zb"/>
+                        <constraint firstItem="f6W-dL-nPV" firstAttribute="top" secondItem="y9m-g6-bKZ" secondAttribute="bottom" constant="10" id="Th0-dm-dfH"/>
+                        <constraint firstAttribute="trailing" secondItem="f6W-dL-nPV" secondAttribute="trailing" constant="15" id="hfX-L7-7YO"/>
+                        <constraint firstAttribute="trailing" secondItem="o9Y-eF-GH8" secondAttribute="trailing" id="k7K-BI-ZTd"/>
+                        <constraint firstAttribute="trailing" secondItem="y9m-g6-bKZ" secondAttribute="trailing" constant="15" id="nGA-By-BqG"/>
+                        <constraint firstItem="y9m-g6-bKZ" firstAttribute="leading" secondItem="Jzu-ZA-EFX" secondAttribute="leading" constant="15" id="sM0-lo-bei"/>
+                        <constraint firstAttribute="height" constant="284" id="vt8-Ky-bio"/>
+                        <constraint firstItem="o9Y-eF-GH8" firstAttribute="top" secondItem="Jzu-ZA-EFX" secondAttribute="top" id="y4V-9X-m9r"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Jzu-ZA-EFX" firstAttribute="centerX" secondItem="rfS-bl-Xff" secondAttribute="centerX" id="H4K-PI-LlU"/>
+                <constraint firstItem="Jzu-ZA-EFX" firstAttribute="centerY" secondItem="rfS-bl-Xff" secondAttribute="centerY" id="nsP-U1-ddL"/>
+            </constraints>
+            <connections>
+                <outlet property="bgImgPopup" destination="zvO-La-VHK" id="cWN-hN-cMc"/>
+                <outlet property="btCancel" destination="U4z-I7-wFf" id="cd1-Jb-jPp"/>
+                <outlet property="btPopup" destination="uEO-h0-wjX" id="1ge-ZJ-fif"/>
+                <outlet property="btTryAgain" destination="QH6-Kc-aHN" id="Ww8-lR-GK7"/>
+                <outlet property="iconPopup" destination="FRp-Yb-PUO" id="1hr-h6-rfw"/>
+                <outlet property="lbDetailPopup" destination="y9m-g6-bKZ" id="pMP-S5-ahW"/>
+                <outlet property="lbTitlePopup" destination="lzU-NJ-rAw" id="Tm1-QH-7Jj"/>
+                <outlet property="viewContainsBt" destination="f6W-dL-nPV" id="twZ-ZG-ptb"/>
+                <outlet property="viewContainsPopup" destination="Jzu-ZA-EFX" id="pyT-Xp-JdF"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="frame_xacnhan" width="270" height="130"/>
+        <image name="ic_thongtin" width="64" height="64"/>
+    </resources>
+</document>

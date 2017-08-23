@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AccountManipulation" customModule="TeamERP_DEMO" customModuleProvider="target">
+            <connections>
+                <outlet property="login" destination="F44-RZ-cSL" id="gN1-wM-RR7"/>
+                <outlet property="register" destination="D4W-ww-YY8" id="yMZ-7S-mHW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jCi-Xv-4YQ">
+                    <rect key="frame" x="16" y="74" width="343" height="29"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="28" id="2eG-W4-Jgn"/>
+                    </constraints>
+                    <segments>
+                        <segment title="Đăng Nhập"/>
+                        <segment title="Đăng Ký"/>
+                    </segments>
+                    <connections>
+                        <action selector="segmentSwitch:" destination="-1" eventType="valueChanged" id="pPp-VL-ZhJ"/>
+                    </connections>
+                </segmentedControl>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F44-RZ-cSL" userLabel="View Login" customClass="LoginVC" customModule="TeamERP_DEMO" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="112" width="375" height="555"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D4W-ww-YY8" userLabel="View Register" customClass="RegisterVC" customModule="TeamERP_DEMO" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="112" width="375" height="555"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LgJ-Og-jgZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9x6-Xc-NWV">
+                            <rect key="frame" x="8" y="26" width="30" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="MNl-zs-y1U"/>
+                                <constraint firstAttribute="width" constant="30" id="Y4F-eq-ANV"/>
+                            </constraints>
+                            <state key="normal" image="ic_Delete"/>
+                            <connections>
+                                <action selector="dismissView:" destination="-1" eventType="touchUpInside" id="x1f-Ha-bab"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="Upn-9f-WIT"/>
+                        <constraint firstAttribute="bottom" secondItem="9x6-Xc-NWV" secondAttribute="bottom" constant="8" id="XTz-eH-tJs"/>
+                        <constraint firstItem="9x6-Xc-NWV" firstAttribute="leading" secondItem="LgJ-Og-jgZ" secondAttribute="leading" constant="8" id="dPQ-hX-zX7"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="jCi-Xv-4YQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="2HE-me-fal"/>
+                <constraint firstItem="jCi-Xv-4YQ" firstAttribute="top" secondItem="LgJ-Og-jgZ" secondAttribute="bottom" constant="10" id="5Ll-77-ill"/>
+                <constraint firstItem="D4W-ww-YY8" firstAttribute="top" secondItem="jCi-Xv-4YQ" secondAttribute="bottom" constant="10" id="5ms-8b-Yoc"/>
+                <constraint firstAttribute="trailing" secondItem="D4W-ww-YY8" secondAttribute="trailing" id="6Op-1S-gCY"/>
+                <constraint firstItem="D4W-ww-YY8" firstAttribute="top" secondItem="jCi-Xv-4YQ" secondAttribute="bottom" constant="10" id="AD7-jJ-nMc"/>
+                <constraint firstItem="F44-RZ-cSL" firstAttribute="top" secondItem="jCi-Xv-4YQ" secondAttribute="bottom" constant="10" id="ATS-GW-nsn"/>
+                <constraint firstAttribute="trailing" secondItem="LgJ-Og-jgZ" secondAttribute="trailing" id="Ao6-LN-KIw"/>
+                <constraint firstAttribute="bottom" secondItem="D4W-ww-YY8" secondAttribute="bottom" id="DqM-Ad-w6H"/>
+                <constraint firstItem="F44-RZ-cSL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Msk-u4-vrl"/>
+                <constraint firstAttribute="bottom" secondItem="F44-RZ-cSL" secondAttribute="bottom" id="QU8-c0-w1A"/>
+                <constraint firstAttribute="trailing" secondItem="F44-RZ-cSL" secondAttribute="trailing" id="cCg-sQ-OK8"/>
+                <constraint firstItem="D4W-ww-YY8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="izJ-6S-qzm"/>
+                <constraint firstItem="LgJ-Og-jgZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="jZ7-Bo-MCh"/>
+                <constraint firstAttribute="trailing" secondItem="jCi-Xv-4YQ" secondAttribute="trailing" constant="16" id="q5L-Oy-d0v"/>
+                <constraint firstItem="LgJ-Og-jgZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="yTy-yL-rWb"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="54.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_Delete" width="24" height="24"/>
+    </resources>
+</document>

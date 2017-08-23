@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopView" customModule="TeamERP_DEMO" customModuleProvider="target">
+            <connections>
+                <outlet property="btBackNav" destination="wmw-OX-sA1" id="pZh-sM-VJJ"/>
+                <outlet property="lbTitle" destination="AmN-U4-HD5" id="f05-Zu-9si"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fdZ-cm-aLf">
+                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AmN-U4-HD5">
+                            <rect key="frame" x="167.5" y="13" width="39" height="19"/>
+                            <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wmw-OX-sA1">
+                            <rect key="frame" x="8" y="6" width="32" height="32"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="32" id="2PZ-vc-MRP"/>
+                                <constraint firstAttribute="height" constant="32" id="yZI-E7-G7b"/>
+                            </constraints>
+                            <state key="normal" image="ic_back"/>
+                            <connections>
+                                <action selector="backNav:" destination="-1" eventType="touchUpInside" id="JyP-kp-Yit"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="wmw-OX-sA1" secondAttribute="bottom" constant="6" id="Kar-fQ-EJc"/>
+                        <constraint firstItem="AmN-U4-HD5" firstAttribute="centerX" secondItem="fdZ-cm-aLf" secondAttribute="centerX" id="NFc-Fm-R9V"/>
+                        <constraint firstItem="AmN-U4-HD5" firstAttribute="centerY" secondItem="fdZ-cm-aLf" secondAttribute="centerY" id="Q3x-kD-RkP"/>
+                        <constraint firstItem="wmw-OX-sA1" firstAttribute="leading" secondItem="fdZ-cm-aLf" secondAttribute="leading" constant="8" id="Tfr-hA-90k"/>
+                        <constraint firstAttribute="height" constant="44" id="gBm-Nt-NJn"/>
+                        <constraint firstItem="wmw-OX-sA1" firstAttribute="top" secondItem="fdZ-cm-aLf" secondAttribute="top" constant="6" id="jlh-6G-hVE"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nTP-be-emu">
+                    <rect key="frame" x="0.0" y="19" width="375" height="1"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="683-lP-gFh"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MNA-ok-aZZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="19"/>
+                    <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="19.5" id="hQM-cl-Gw4"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="fdZ-cm-aLf" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ANf-D9-JbS"/>
+                <constraint firstItem="nTP-be-emu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="CM6-yx-1gx"/>
+                <constraint firstAttribute="trailing" secondItem="nTP-be-emu" secondAttribute="trailing" id="KKY-HG-r8q"/>
+                <constraint firstAttribute="trailing" secondItem="MNA-ok-aZZ" secondAttribute="trailing" id="TNr-gb-6te"/>
+                <constraint firstAttribute="bottom" secondItem="fdZ-cm-aLf" secondAttribute="bottom" id="XPL-1I-cas"/>
+                <constraint firstItem="MNA-ok-aZZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mHI-2I-fXF"/>
+                <constraint firstAttribute="trailing" secondItem="fdZ-cm-aLf" secondAttribute="trailing" id="nKe-W6-2e0"/>
+                <constraint firstItem="MNA-ok-aZZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="v9A-F5-x3n"/>
+                <constraint firstItem="fdZ-cm-aLf" firstAttribute="top" secondItem="nTP-be-emu" secondAttribute="bottom" id="yNW-qq-6lJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="151.5" y="42"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_back" width="15" height="15"/>
+    </resources>
+</document>

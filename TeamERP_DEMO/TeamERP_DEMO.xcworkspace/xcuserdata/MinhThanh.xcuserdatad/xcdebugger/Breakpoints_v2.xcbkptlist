@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TeamERP_DEMO/Services/Services.swift"
+            timestampString = "522577508.870497"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "request(api:type:method:param:success:failure:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TeamERP_DEMO/Services/Services.swift"
+            timestampString = "522577512.871786"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "request(api:type:method:param:success:failure:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "static TeamERP_DEMO.Services.request (api : TeamERP_DEMO.APIFunction, type : TeamERP_DEMO.ServicesType, method : Alamofire.HTTPMethod, param : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, success : (TeamERP_DEMO.APIResponse) -&gt; (), failure : (Swift.String) -&gt; ()) -&gt; ()"
+                  moduleName = "TeamERP_DEMO"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/Project/Project_Ha%CC%A3%CC%82n/TeamERP_DEMO/TeamERP_DEMO/Services/Services.swift"
+                  timestampString = "523378006.507888"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "1379">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "function signature specialization &lt;Arg[1] = Value Promoted from Box&gt; of static TeamERP_DEMO.Services.(request (api : TeamERP_DEMO.APIFunction, type : TeamERP_DEMO.ServicesType, method : Alamofire.HTTPMethod, param : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, success : (TeamERP_DEMO.APIResponse) -&gt; (), failure : (Swift.String) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "TeamERP_DEMO"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/Project/Project_Ha%CC%A3%CC%82n/TeamERP_DEMO/TeamERP_DEMO/Services/Services.swift"
+                  timestampString = "523378006.5108"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "54"
+                  endingLineNumber = "54"
+                  offsetFromSymbolStart = "61">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="58H-KP-EGw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Acounts View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="AcountsViewController" customModule="TeamERP_DEMO" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FGZ-Q4-YCR" customClass="TopView" customModule="TeamERP_DEMO" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="SXL-RK-qeu"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vzd-l2-QX6" customClass="TabContainer" customModule="PGTabBar">
+                                <rect key="frame" x="0.0" y="64" width="375" height="60"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="09I-te-yxl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="FGZ-Q4-YCR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZIF-xM-riv"/>
+                            <constraint firstItem="vzd-l2-QX6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="bf8-iL-nK8"/>
+                            <constraint firstAttribute="trailing" secondItem="FGZ-Q4-YCR" secondAttribute="trailing" id="bg9-vo-zEx"/>
+                            <constraint firstItem="vzd-l2-QX6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="kbW-rj-n13"/>
+                            <constraint firstItem="FGZ-Q4-YCR" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="l7r-0e-Q24"/>
+                            <constraint firstAttribute="trailing" secondItem="vzd-l2-QX6" secondAttribute="trailing" id="oZt-8V-OuR"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="D4m-fk-zcS"/>
+                    <connections>
+                        <outlet property="TabbarTop" destination="vzd-l2-QX6" id="UAs-cD-el7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2352.8000000000002" y="138.98050974512745"/>
+        </scene>
+        <!--Tìm kiếm-->
+        <scene sceneID="qHf-YF-Xwq">
+            <objects>
+                <viewController id="eg9-NW-fUV" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W06-vN-e7r"/>
+                        <viewControllerLayoutGuide type="bottom" id="fJh-gx-ngt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Eqe-72-KOa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pbD-bq-FFy" customClass="TopView" customModule="TeamERP_DEMO" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <color key="backgroundColor" red="0.72549019609999998" green="0.72549019609999998" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="i86-pK-lLW"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pbD-bq-FFy" firstAttribute="top" secondItem="Eqe-72-KOa" secondAttribute="top" id="SbJ-SW-woP"/>
+                            <constraint firstItem="pbD-bq-FFy" firstAttribute="leading" secondItem="Eqe-72-KOa" secondAttribute="leading" id="eVj-K9-RTb"/>
+                            <constraint firstAttribute="trailing" secondItem="pbD-bq-FFy" secondAttribute="trailing" id="hJq-Vx-Jh8"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tìm kiếm" image="search" id="s08-PO-vMM"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fd5-2U-vCi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-250" y="139"/>
+        </scene>
+        <!--Giỏ Hàng-->
+        <scene sceneID="YJY-2M-mSH">
+            <objects>
+                <viewController id="OnJ-Uj-4pe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KL5-vR-VYD"/>
+                        <viewControllerLayoutGuide type="bottom" id="LLT-gw-6NK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WPw-Y1-aap">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ely-q5-nCA" customClass="TopView" customModule="TeamERP_DEMO" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <color key="backgroundColor" red="0.72549019609999998" green="0.72549019609999998" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="4yu-kf-YYM"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ely-q5-nCA" firstAttribute="leading" secondItem="WPw-Y1-aap" secondAttribute="leading" id="SyG-F4-uAO"/>
+                            <constraint firstAttribute="trailing" secondItem="ely-q5-nCA" secondAttribute="trailing" id="fw0-0m-0mA"/>
+                            <constraint firstItem="ely-q5-nCA" firstAttribute="top" secondItem="WPw-Y1-aap" secondAttribute="top" id="mUs-Hb-3oY"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Giỏ Hàng" image="shoppingCart" id="CpO-gp-42v"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g4O-es-bbU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="617" y="139"/>
+        </scene>
+        <!--Cửa hàng-->
+        <scene sceneID="VPj-cn-Bat">
+            <objects>
+                <viewController id="JQ0-YU-Tfv" customClass="MainShopViewController" customModule="TeamERP_DEMO" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9ae-2w-mmV"/>
+                        <viewControllerLayoutGuide type="bottom" id="XCi-FK-fsH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yLn-fM-eyO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y1q-kj-6Ao" customClass="TopView" customModule="TeamERP_DEMO" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <color key="backgroundColor" red="0.72549019609999998" green="0.72549019609999998" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="xZO-kr-eD0"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RQE-gm-mMd">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="JQ0-YU-Tfv" id="Atx-jJ-Q6H"/>
+                                    <outlet property="delegate" destination="JQ0-YU-Tfv" id="bRW-N6-kPT"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="y1q-kj-6Ao" firstAttribute="top" secondItem="yLn-fM-eyO" secondAttribute="top" id="73i-pD-81u"/>
+                            <constraint firstItem="RQE-gm-mMd" firstAttribute="top" secondItem="y1q-kj-6Ao" secondAttribute="bottom" id="DQh-LD-c4L"/>
+                            <constraint firstItem="y1q-kj-6Ao" firstAttribute="leading" secondItem="yLn-fM-eyO" secondAttribute="leading" id="GcY-6f-KRm"/>
+                            <constraint firstItem="RQE-gm-mMd" firstAttribute="leading" secondItem="yLn-fM-eyO" secondAttribute="leading" id="NHz-K2-Ean"/>
+                            <constraint firstAttribute="trailing" secondItem="RQE-gm-mMd" secondAttribute="trailing" id="SSW-Hr-FZF"/>
+                            <constraint firstItem="XCi-FK-fsH" firstAttribute="top" secondItem="RQE-gm-mMd" secondAttribute="bottom" id="Tjg-YV-bgz"/>
+                            <constraint firstAttribute="trailing" secondItem="y1q-kj-6Ao" secondAttribute="trailing" id="oYr-on-efp"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Cửa hàng" image="home" id="4J8-hm-FeU"/>
+                    <connections>
+                        <outlet property="tbViewShop" destination="RQE-gm-mMd" id="5t4-tK-weR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zso-ma-D6X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1162.4000000000001" y="138.98050974512745"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="WDx-rK-HnN">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="58H-KP-EGw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="N4r-FG-dSJ">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="JQ0-YU-Tfv" kind="relationship" relationship="viewControllers" id="100-nM-Vw4"/>
+                        <segue destination="eg9-NW-fUV" kind="relationship" relationship="viewControllers" id="OqP-7V-4ft"/>
+                        <segue destination="OnJ-Uj-4pe" kind="relationship" relationship="viewControllers" id="7wr-QG-IN3"/>
+                        <segue destination="2Cj-OW-mw5" kind="relationship" relationship="viewControllers" id="xsn-3T-Hk0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eHN-um-tcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169" y="-566"/>
+        </scene>
+        <!--Tài khoản-->
+        <scene sceneID="sMo-U6-xM8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Cj-OW-mw5" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Tài khoản" image="user" id="Liz-V5-hDJ"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aL7-u2-Hns">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="wuO-hF-edH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EII-ou-lB2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1413.5999999999999" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="home" width="24" height="24"/>
+        <image name="search" width="24" height="24"/>
+        <image name="shoppingCart" width="24" height="24"/>
+        <image name="user" width="24" height="24"/>
+    </resources>
+</document>
