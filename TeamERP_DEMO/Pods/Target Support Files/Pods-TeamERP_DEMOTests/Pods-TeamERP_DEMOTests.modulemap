@@ -1,6 +1,0 @@
-framework module Pods_TeamERP_DEMOTests {
-  umbrella header "Pods-TeamERP_DEMOTests-umbrella.h"
-
-  export *
-  module * { export * }
-}
